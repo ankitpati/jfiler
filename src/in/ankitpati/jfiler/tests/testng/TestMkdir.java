@@ -1,10 +1,18 @@
 package in.ankitpati.jfiler.tests.testng;
 
-import java.io.*;
-import java.util.*;
-import org.testng.*;
-import org.testng.annotations.*;
-import in.ankitpati.jfiler.commands.*;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import in.ankitpati.jfiler.commands.Mkdir;
+import in.ankitpati.jfiler.commands.Rm;
 
 public class TestMkdir {
     ArrayList<String> files;

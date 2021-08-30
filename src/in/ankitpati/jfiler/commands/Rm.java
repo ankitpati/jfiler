@@ -1,9 +1,14 @@
 package in.ankitpati.jfiler.commands;
 
-import java.io.*;
-import java.util.*;
-import java.nio.file.*;
-import java.nio.file.attribute.*;
+import java.io.IOException;
+import java.nio.file.FileVisitResult;
+import java.nio.file.Files;
+import java.nio.file.LinkOption;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.SimpleFileVisitor;
+import java.nio.file.attribute.BasicFileAttributes;
+import java.util.ArrayList;
 
 public class Rm {
     ArrayList<String> files;

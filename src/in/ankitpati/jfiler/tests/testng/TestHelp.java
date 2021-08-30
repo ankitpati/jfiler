@@ -1,8 +1,10 @@
 package in.ankitpati.jfiler.tests.testng;
 
-import java.util.*;
-import org.testng.annotations.*;
-import in.ankitpati.jfiler.commands.*;
+import java.util.ArrayList;
+
+import org.testng.annotations.Test;
+
+import in.ankitpati.jfiler.commands.Help;
 
 public class TestHelp {
     @Test(expectedExceptions = NullPointerException.class)

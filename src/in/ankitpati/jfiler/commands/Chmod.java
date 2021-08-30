@@ -1,9 +1,14 @@
 package in.ankitpati.jfiler.commands;
 
-import java.io.*;
-import java.util.*;
-import java.nio.file.*;
-import java.nio.file.attribute.*;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.LinkOption;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.attribute.PosixFilePermission;
+import java.nio.file.attribute.PosixFilePermissions;
+import java.util.ArrayList;
+import java.util.Set;
 
 public class Chmod {
     ArrayList<String> files;
